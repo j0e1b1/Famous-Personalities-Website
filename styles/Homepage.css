@@ -1,0 +1,108 @@
+
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Fixed Navigation Bar */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #333;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.navbar .logo {
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+}
+
+.navbar ul li {
+    margin: 0 15px;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+.navbar ul li a:hover {
+    color: #f4a261;
+}
+
+/* Content to show scrolling effect */
+.content {
+    padding-top: 80px; /* Space for fixed navbar */
+    height: 200vh;
+    background: linear-gradient(to bottom, #f4f4f4, #ddd);
+    text-align: center;
+    padding: 50px;
+    font-size: 24px;
+}
+
+.page-selection{
+  padding-top: 300px;
+  width:300px;
+  margin: 0 auto;
+}
+
+.page-selection-box{
+  border:solid;
+  width: 350px;
+  height: 200px;
+  padding: 20px;
+  justify-content: center;
+  text-align: center;
+  border-radius: 20px;
+  box-shadow: 5px 5px 5px 5px rgb(189, 185, 185);
+}
+
+.list-title{
+  padding-bottom: 15px;
+  padding-top: 20px;
+}
+
+.page-list li, li a{
+  padding: 5px;
+  text-decoration: none;
+  color: black;
+  list-style: none;
+}
+
+.page-list li a:hover{
+  color: #f4a261;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .navbar ul {
+        flex-direction: column;
+    }
+
+    .navbar ul li {
+        margin: 10px 0;
+    }
+}
